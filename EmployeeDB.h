@@ -19,25 +19,25 @@ class EmployeeDB
     }
 
     void populateEmployeeDB(){
-        // ifstream fin("employeeDB.txt");
-        // string name;
-        // int age;
-        // float salary;
-        // bool hc;
-        // bool nri;
-        // if(fin.is_open())
-        // {
-        //     while(fin)
-        //     {
-        //         fin >> name >> age >> salary >> hc >> nri; 
-        //         addEmployee(name, age, salary, hc, nri);
-        //     }
-        // }
-        // fin.close();
-        addEmployee("Afds", 30, 30, false, false);
-        addEmployee("Bss", 23, 10, true, false);
-        addEmployee("Dffss", 21, 20, false, true);
-        addEmployee("Gfss", 33, 23, false, true);
+        ifstream fin("employeeDB.txt");
+        string name;
+        int age;
+        float salary;
+        bool hc;
+        bool nri;
+        if(fin.is_open())
+        {
+            while(fin)
+            {
+                fin >> name >> age >> salary >> hc >> nri; 
+                addEmployee(name, age, salary, hc, nri);
+            }
+        }
+        fin.close();
+//         addEmployee("Afds", 30, 30, false, false);
+//         addEmployee("Bss", 23, 10, true, false);
+//         addEmployee("Dffss", 21, 20, false, true);
+//         addEmployee("Gfss", 33, 23, false, true);
     }
 
     void displayEmployees(){

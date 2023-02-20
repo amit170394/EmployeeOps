@@ -1,11 +1,12 @@
 # EmployeeOps
 
 To compile:
-    g++ -o sorter main.cpp
+    g++ -o ops main.cpp OperationsEmployeeDB.cpp Employee.cpp EmployeeDB.cpp
     
 To run examples:
-    ./sorter sort name ASC
-    ./sorter sort age ASC
-    ./sorter filter age less than 20
-    ./sorter filter salary greater than 30
-    ./sorter filter HC true
+    ./ops sort name ASC
+    ./ops sort age DESC
+    ./ops filter age less than 20
+    ./ops filter age equal to 20
+    ./ops filter salary greater than 30
+    ./ops filter HC true
